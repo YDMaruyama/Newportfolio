@@ -1,143 +1,167 @@
-/* ベーシックスタイル */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
-
-nav h1 {
-    text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
-section {
-    padding: 50px 20px;
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.skill-list, .work-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.hero p {
+  font-size: 1.2rem;
 }
 
-.skill-item, .work-item {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* About Section */
+#about {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+#about h2 {
+  font-size: 2rem;
 }
 
-form label {
-    margin-top: 10px;
+#about p {
+  font-size: 1rem;
+  margin: 20px 0;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Works Section */
+#works {
+  padding: 40px;
+  background-color: #fff;
 }
 
-form button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#works h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
-form button:hover {
-    background-color: #555;
+.work-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
+.work-item {
+  width: 200px;
+  text-align: center;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Services Section */
+#services {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2rem;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+}
+
+#services ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* サービス内容ページのスタイル */
-.service-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
 
-.service-item {
-    width: 45%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-/* ブログページのスタイル */
-.blog-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.blog-post {
-    width: 80%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h3 {
-    margin-bottom: 10px;
-}
-
-.blog-post p {
-    margin-bottom: 10px;
-}
-
-.blog-post a {
-    color: #333;
-    text-decoration: underline;
-    font-weight: bold;
+.social-links a:hover {
+  text-decoration: underline;
 }
