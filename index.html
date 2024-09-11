@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="スキルと実績を紹介するポートフォリオ">
-    <title>ポートフォリオ - あなたの名前</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <nav>
-            <h1>あなたの名前</h1>
-            <ul>
-                <li><a href="#about">自己紹介</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#works">実績</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- 自己紹介セクション -->
-    <section id="about">
-        <h2>自己紹介</h2>
-        <p>ビデオ編集者として、Adobeソフトウェアを使用して300本以上の広告動画を制作しています。SNS管理やデザインも手掛けています。</p>
-    </section>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#works">実績</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- スキルセクション -->
-    <section id="skills">
-        <h2>スキル</h2>
-        <div class="skill-list">
-            <div class="skill-item">
-                <h3>ビデオ編集</h3>
-                <p>Adobe Premiere Pro、After Effectsを使ったアニメーションや広告動画の作成が得意です。</p>
-            </div>
-            <div class="skill-item">
-                <h3>デザイン</h3>
-                <p>Photoshop、Illustratorを使ってSNSコンテンツやブランドビジュアルをデザインします。</p>
-            </div>
-            <div class="skill-item">
-                <h3>SNS管理</h3>
-                <p>InstagramやLINEの運用、フォロワーエンゲージメント向上施策の立案が可能です。</p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>SNSマーケティングと動画編集で、ビジネスの成功をサポート</h1>
+    <p>デジタル戦略から動画制作まで、すべてお任せください。</p>
+  </section>
 
-    <!-- 実績セクション -->
-    <section id="works">
-        <h2>実績</h2>
-        <div class="work-list">
-            <div class="work-item">
-                <h3>YouTube広告制作</h3>
-                <p>再生回数が25,000回を超えたYouTube広告を制作しました。</p>
-            </div>
-            <div class="work-item">
-                <h3>Instagramリール動画</h3>
-                <p>炭火焼肉とちゅえんのリール動画が1ヶ月で9万件のリーチを達成しました。</p>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>プロフィール</h2>
+    <p>企画やプランニング、SNS運用、動画編集のスペシャリストとして、さまざまな業界で成功を収めています。</p>
+    <ul>
+      <li>ビデオ編集スキル</li>
+      <li>SNS運用スキル</li>
+      <li>デザインスキル</li>
+    </ul>
+  </section>
 
-    <!-- お問い合わせセクション -->
-    <section id="contact">
-        <h2>お問い合わせ</h2>
-        <p>お仕事のご依頼やお問い合わせはこちらのフォームからどうぞ。</p>
-        <form action="https://formspree.io/your-email" method="POST">
-            <label for="name">お名前:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">メールアドレス:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">メッセージ:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">送信</button>
-        </form>
-    </section>
+  <!-- Works Section -->
+  <section id="works">
+    <h2>実績</h2>
+    <div class="work-gallery">
+      <div class="work-item">
+        <img src="image1.jpg" alt="MEO対策実績">
+        <h3>MEO対策</h3>
+        <p>口コミ評価を3.6から4.1に向上、低評価の口コミを80%削減。</p>
+      </div>
+      <div class="work-item">
+        <img src="image2.jpg" alt="SNS動画実績">
+        <h3>SNSショート動画</h3>
+        <p>リール動画で9万リーチ、2.5万再生を達成。</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- フッター -->
-    <footer>
-        <p>© 2024 あなたの名前. All rights reserved.</p>
-    </footer>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>サービス</h2>
+    <ul>
+      <li>SNS運用代行</li>
+      <li>動画編集サービス</li>
+      <li>デジタル戦略コンサルティング</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <form action="submit.html" method="POST">
+      <label for="name">名前</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">メッセージ</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
 </body>
 </html>
-
