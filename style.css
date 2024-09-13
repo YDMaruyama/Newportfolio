@@ -16,6 +16,7 @@ header {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -28,53 +29,54 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
-  background: url('hero.jpg') no-repeat center center/cover;
+  background-color: #444;
   color: white;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1.2rem;
 }
 
-/* About Section */
-#about {
+.cta-button {
+  padding: 10px 20px;
+  background-color: #00AEEF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #008FC4;
+}
+
+/* Content Sections */
+.content-section {
   padding: 40px;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
-#about h2 {
-  font-size: 2rem;
+.skills-list, .service-list {
+  list-style: none;
+  padding: 0;
 }
 
-#about p {
-  font-size: 1rem;
-  margin: 20px 0;
+.skills-list li, .service-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 /* Works Section */
-#works {
-  padding: 40px;
-  background-color: #fff;
-}
-
-#works h2 {
-  font-size: 2rem;
-  text-align: center;
-}
-
 .work-gallery {
   display: flex;
   justify-content: center;
@@ -92,67 +94,42 @@ nav ul li a {
   border-radius: 10px;
 }
 
-/* Services Section */
-#services {
-  padding: 40px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-#services h2 {
-  font-size: 2rem;
-}
-
-#services ul {
-  list-style: none;
-  padding: 0;
-}
-
-#services ul li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
 /* Contact Section */
-#contact {
-  padding: 40px;
-  background-color: #fff;
-  text-align: center;
-}
-
-#contact form {
+form {
   max-width: 400px;
   margin: 0 auto;
+  text-align: left;
 }
 
-#contact label {
+label {
   display: block;
-  margin: 10px 0 5px;
+  margin-top: 20px;
 }
 
-#contact input, #contact textarea {
+input, textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-#contact button {
+button {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #00AEEF;
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-#contact button:hover {
-  background-color: #555;
+button:hover {
+  background-color: #008FC4;
 }
 
 /* Footer */
 footer {
   background-color: #222;
   color: #fff;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 
