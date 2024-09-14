@@ -31,9 +31,7 @@ nav ul li a {
 
 .hero {
   background: url('hero.jpg') no-repeat center center/cover; /* 背景画像 */
-  color: white;
   height: 500px; /* 高さを調整 */
-  display: flex;
   justify-content: flex-start; /* 左に配置 */
   align-items: center; /* 縦方向に中央揃え */
   text-align: left;
