@@ -30,23 +30,32 @@ nav ul li a {
 }
 
 .hero {
-  background-color: #444;
+  background: url('hero.jpg') no-repeat center center/cover; /* 背景画像 */
   color: white;
-  height: 300px;
+  height: 500px; /* 高さを調整 */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start; /* 左に配置 */
+  align-items: center; /* 縦方向に中央揃え */
+  text-align: left;
+  padding: 0 20px; /* 左右の余白を追加 */
+}
+
+.hero-text {
+  max-width: 600px; /* テキストの幅を制限 */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* フォントサイズを調整 */
+  line-height: 1.4; /* 行間を調整 */
+  text-align: left; /* 左揃え */
 }
 
 .hero p {
   font-size: 1.2rem;
+  text-align: left; /* 左揃え */
+  margin-top: 20px; /* 上に余白を追加 */
 }
+
 
 .cta-button {
   padding: 10px 20px;
