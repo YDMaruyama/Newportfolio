@@ -42,18 +42,20 @@ nav ul li a {
 
 .hero-text {
   max-width: 600px; /* テキストの幅を制限 */
+  text-align: left; /* 左揃え */
 }
 
 .hero h1 {
   font-size: 2.5rem; /* フォントサイズを調整 */
   line-height: 1.4; /* 行間を調整 */
-  text-align: left; /* 左揃え */
+  text-align: left; /* 左揃え */ 
+  margin-bottom: 20px; /* 下に余白を追加 */
 }
 
 .hero p {
   font-size: 1.2rem;
   text-align: left; /* 左揃え */
-  margin-top: 20px; /* 上に余白を追加 */
+
 }
 
 
