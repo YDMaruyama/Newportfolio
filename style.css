@@ -43,6 +43,8 @@ nav ul li a {
 .hero-text {
   max-width: 600px; /* テキストの幅を制限 */
   text-align: left; /* 左揃え */
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
 }
 
 .hero h1 {
