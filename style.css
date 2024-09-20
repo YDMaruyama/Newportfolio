@@ -80,15 +80,30 @@ nav ul li a {
   text-align: center;
 }
 
-.skills-list, .service-list {
-  list-style: none;
-  padding: 0;
+/* プロフィールセクションのテキストを右揃え */
+#about h2, #about p {
+  text-align: right; /* 右揃え */
+  float: right; /* 右端に寄せる */
+  width: 50%; /* テキストエリアの幅を50%に制限 */
+  padding-right: 20px; /* 右側に余白を追加 */
 }
 
-.skills-list li, .service-list li {
-  font-size: 1.2rem;
-  margin: 10px 0;
+/* スキルリストを3列で並べる */
+.skills-list {
+  display: flex; /* Flexboxを使用 */
+  justify-content: flex-start; /* 左寄せ */
+  flex-wrap: wrap; /* アイテムが折り返し可能に */
+  list-style: none; /* リストの点を非表示 */
+  padding: 0;
+  width: 50%; /* リストエリアを左半分に */
+  float: left; /* 左端に寄せる */
 }
+
+.skills-list li {
+  width: 30%; /* 3列に分割 */
+  margin-bottom: 10px; /* 各アイテムの間に余白を追加 */
+}
+
 
 /* Works Section */
 .work-gallery {
