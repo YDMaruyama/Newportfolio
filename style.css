@@ -72,43 +72,36 @@ nav ul li a {
   text-align: left; /* 左揃え */
 }
 
-/* Content Sections */
-.content-section {
-  background-color: white;
-  padding: 80px;
-  text-align: center;
-}
-
 #about {
-  display: flex;
-  justify-content: space-between; /* 左右に要素を分割 */
-  color:black;
+  background-color: #f1eee9;
+  padding: 4rem 0rem;
 }
-
-#about h2, #about p {
-  text-align: right; /* 右揃え */
-  width: 50%; /* テキストエリアの幅を50%に制限 */
-  padding-right: 20px; /* 右側に余白を追加 */
+#about ul {
+  justify-content: flex-start;
 }
-
-/* リストのスタイル */
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3列に分割 */
-  grid-gap: 10px; /* 各項目の間にスペースを追加 */
-  text-align: left; /* 左揃え */
-  max-width: 50%; /* 左半分を占める */
+#about ul li {
+  width: 23.21%;
+  font-size: 0px;
+  margin-right: 2.386%;
 }
-
-.skills-list li {
-  width: 30%; /* 3列に分割 */
-  margin-bottom: 10px; /* 各アイテムの間に余白を追加 */
-  font-size: 1.2rem;
+#about ul li img{
+	width:100%;
 }
-
+#about ul li:last-child {
+  margin-right: 0px;
+}
+#about ul li a {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  position: relative;
+}
+  #about ul li a span.icon_link {
+    display: block;
+    position: absolute;
+    right: 3px;
+    bottom: 5px;
+  }
 /* Works Section */
 .work-gallery {
   background-color:black;
