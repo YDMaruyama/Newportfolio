@@ -21,10 +21,6 @@ body {
   padding: 40px;
 }
 
-/* その他の基本スタイルはそのまま維持 */
-
-
-
 header {
   background-color: #222;
   color: #fff;
@@ -124,36 +120,6 @@ nav ul li a {
   border-radius: 10px;
 }
 
-/* Contact Section */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin-top: 20px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #00AEEF;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #008FC4;
-}
 
 /* Footer */
 footer {
