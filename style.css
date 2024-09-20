@@ -50,6 +50,7 @@ nav ul li a {
   align-items: center; /* 縦方向に中央揃え */
   text-align: left;
   padding: 0 20px; /* 左右の余白を追加 */
+  color:white;
 }
 
 .hero-text {
@@ -81,6 +82,7 @@ nav ul li a {
 #about {
   display: flex;
   justify-content: space-between; /* 左右に要素を分割 */
+  color:black;
 }
 
 #about h2, #about p {
