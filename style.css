@@ -74,18 +74,6 @@ nav ul li a {
 }
 
 
-.cta-button {
-  padding: 10px 20px;
-  background-color: #00AEEF;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background-color: #008FC4;
-}
-
 /* Content Sections */
 .content-section {
   padding: 80px;
