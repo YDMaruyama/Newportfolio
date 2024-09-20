@@ -76,6 +76,7 @@ nav ul li a {
 
 /* Content Sections */
 .content-section {
+  backgroundcolor:white;
   padding: 80px;
   text-align: center;
 }
