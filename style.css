@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-
 /* 白背景、黒文字のセクション */
 .white-bg {
   background-color: white;
@@ -45,9 +44,9 @@ nav ul li a {
 }
 
 .hero {
-  backgroundcolor:black;
+  background-color: black;
   height: 500px; /* 高さを調整 */
-  justify-content: cener; /* 水平方向の中央揃え */*/
+  justify-content: center; /* 水平方向の中央揃え */
   align-items: center; /* 縦方向に中央揃え */
   text-align: left;
   padding: 0 20px; /* 左右の余白を追加 */
@@ -70,24 +69,22 @@ nav ul li a {
 .hero p {
   font-size: 1.2rem;
   text-align: left; /* 左揃え */
-
 }
-
 
 /* Content Sections */
 .content-section {
-  backgroundcolor:white;
+  background-color: white;
   padding: 80px;
   text-align: center;
 }
+
 #about {
   display: flex;
   justify-content: space-between; /* 左右に要素を分割 */
-  
-/* プロフィールセクションのテキストを右揃え */
+}
+
 #about h2, #about p {
   text-align: right; /* 右揃え */
-  float: right; /* 右端に寄せる */
   width: 50%; /* テキストエリアの幅を50%に制限 */
   padding-right: 20px; /* 右側に余白を追加 */
 }
@@ -102,6 +99,8 @@ nav ul li a {
   grid-gap: 10px; /* 各項目の間にスペースを追加 */
   text-align: left; /* 左揃え */
   max-width: 50%; /* 左半分を占める */
+}
+
 .skills-list li {
   width: 30%; /* 3列に分割 */
   margin-bottom: 10px; /* 各アイテムの間に余白を追加 */
@@ -126,7 +125,6 @@ nav ul li a {
   border-radius: 10px;
 }
 
-
 /* Footer */
 footer {
   background-color: #222;
@@ -144,4 +142,3 @@ footer {
 .social-links a:hover {
   text-decoration: underline;
 }
-
