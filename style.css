@@ -79,7 +79,11 @@ nav ul li a {
   padding: 80px;
   text-align: center;
 }
-
+#about {
+  display: flex;
+  justify-content: space-between; /* 左右に要素を分割 */
+  align-items: center;
+  
 /* プロフィールセクションのテキストを右揃え */
 #about h2, #about p {
   text-align: right; /* 右揃え */
@@ -88,22 +92,23 @@ nav ul li a {
   padding-right: 20px; /* 右側に余白を追加 */
 }
 
-/* スキルリストを3列で並べる */
+/* リストのスタイル */
 .skills-list {
-  display: flex; /* Flexboxを使用 */
-  justify-content: flex-start; /* 左寄せ */
-  flex-wrap: wrap; /* アイテムが折り返し可能に */
-  list-style: none; /* リストの点を非表示 */
+  list-style: none;
   padding: 0;
-  width: 50%; /* リストエリアを左半分に */
-  float: left; /* 左端に寄せる */
-}
-
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3列に分割 */
+  grid-gap: 10px; /* 各項目の間にスペースを追加 */
+  text-align: left; /* 左揃え */
+  max-width: 50%; /* 左半分を占める */
 .skills-list li {
   width: 30%; /* 3列に分割 */
   margin-bottom: 10px; /* 各アイテムの間に余白を追加 */
 }
-
+.skills-list li {
+  font-size: 1.2rem;
+}
 
 /* Works Section */
 .work-gallery {
