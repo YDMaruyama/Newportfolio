@@ -111,6 +111,7 @@ nav ul li a {
 
 /* Works Section */
 .work-gallery {
+  background-color:black;
   display: flex;
   justify-content: center;
   gap: 20px;
