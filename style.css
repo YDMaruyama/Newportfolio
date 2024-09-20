@@ -153,3 +153,19 @@ footer {
 .social-links a:hover {
   text-decoration: underline;
 }
+/* 白背景、黒文字のセクション */
+.white-bg {
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+
+/* 黒背景、白文字のセクション */
+.black-bg {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+/* その他の基本スタイルはそのまま維持 */
+
