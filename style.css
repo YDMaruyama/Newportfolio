@@ -76,9 +76,7 @@ nav ul li a {
   background-color: #f1eee9;
   padding: 4rem 0rem;
 }
-#about ul {
-  justify-content: flex-start;
-}
+
 #about ul li {
   width: 23.21%;
   font-size: 0px;
