@@ -106,8 +106,6 @@ nav ul li a {
 .skills-list li {
   width: 30%; /* 3列に分割 */
   margin-bottom: 10px; /* 各アイテムの間に余白を追加 */
-}
-.skills-list li {
   font-size: 1.2rem;
 }
 
