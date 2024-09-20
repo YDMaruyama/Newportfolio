@@ -83,7 +83,6 @@ nav ul li a {
 #about {
   display: flex;
   justify-content: space-between; /* 左右に要素を分割 */
-  align-items: center;
   
 /* プロフィールセクションのテキストを右揃え */
 #about h2, #about p {
