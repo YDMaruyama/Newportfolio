@@ -51,7 +51,7 @@ nav ul li a {
 .hero {
   backgroundcolor:black;
   height: 500px; /* 高さを調整 */
-  justify-content: center; /* 水平方向の中央揃え */*/
+  justify-content: cener; /* 水平方向の中央揃え */*/
   align-items: center; /* 縦方向に中央揃え */
   text-align: left;
   padding: 0 20px; /* 左右の余白を追加 */
@@ -92,7 +92,7 @@ nav ul li a {
 
 /* Content Sections */
 .content-section {
-  padding: 40px;
+  padding: 80px;
   text-align: center;
 }
 
