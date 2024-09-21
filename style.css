@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 .hero-text {
-  max-width: 600px; /* テキストの幅を制限 */
+  max-width: 400px; /* テキストの幅を制限 */
   text-align: left; /* 左揃え */
   display: flex;
   flex-direction: column; /* 子要素を縦に並べる */
@@ -100,6 +100,7 @@ nav ul li a {
     right: 3px;
     bottom: 5px;
   }
+
 /* Works Section */
 .work-gallery {
   background-color:black;
