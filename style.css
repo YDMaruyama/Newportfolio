@@ -1,0 +1,317 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 白背景、黒文字のセクション */
+.white-bg {
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+
+/* 黒背景、白文字のセクション */
+.black-bg {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* アニメーションにease-in-outを適用 */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  position: relative;
+  
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* ホバーした際にリンクが広がらないようにパディングを追加 */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav ul li:hover a {
+  background-color: #f0f0f0; /* ホバー時の背景色 */
+  color: #333; /* ホバー時の文字色 */
+  border-radius: 5px; /* 角を少し丸くする */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 少し影をつけて強調 */
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* 左側のテキストと右側の画像を分ける */
+  align-items: center;
+  height: 500px;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+}
+
+.hero-text {
+  font-size: 3rem;
+  max-width: 400px; /* テキストの幅を制限 */
+  text-align: left; /* 左揃え */
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+  max-width: 50%; /* テキストの幅を最大50%に制限 */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0%; /* 初期位置を画面外に */
+  width: 50%; /* 右半分を画像でカバー */
+  height: 100%;
+  background-image: url('パソコン.jpg'); /* 使用する画像を指定 */
+  background-size: cover; /* 画像を要素全体にカバー */
+  background-position: center;
+  opacity: 0; /* 初期状態で透明にする */
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; /* ふんわりスライドアニメーション */
+  transform: translateX(100%); /* 初期状態では画面外 */
+}
+/* Heroセクションのホバー時に画像をスライドイン */
+.hero:hover::after {
+  transform: translateX(0); /* 画像がスライドして表示される */
+  opacity: 1; /* 透明度が1（完全に表示）になる */
+}
+
+.hero h1{font-size: 3rem;
+  margin-bottom: 20px;
+  white-space: nowrap; /* 改行を防ぐ */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  white-space: nowrap; /* 改行を防ぐ */
+}
+
+
+#about {
+  position: relative;
+  background-color: #f1eee9;
+  padding: 8rem;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+  z-index: 1;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%; /* 初期状態で画面外に配置 */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--bg-image); /* JavaScriptで背景画像をセット */
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  transform: translateX(-100%); /* 初期状態でスライドアウト */
+}
+
+#about.bg-slide-in::before {
+  transform: translateX(0); /* 左からスライドイン */
+  opacity: 1;
+}
+#about ul {
+  display: flex; /* 横並びにする */
+  justify-content: space-between; /* リストアイテムの間を均等に配置 */
+  list-style: none; /* リストマーカーを非表示 */
+  padding: 0;
+  margin-top: 20px; /* 上に余白を減らしてリストを少し上に移動 */
+  position: relative; /* 上下の調整を可能に */
+  top: -10px; /* リストを少し上に移動 */
+}
+
+#about ul li {
+  position: relative;
+  margin-left: 45px; /* 左側に20pxの余白を追加 */
+  width: 300px; /* 各アイテムの幅を調整 */
+  height: 300px;
+  text-align: left;
+  margin-right: 2%; /* アイテム間のスペース */
+  background-color: #f0f0f0; /* ベタ塗りの色を指定 */
+  padding: 20px; /* コンテンツとの余白を追加 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加して浮き上がるような効果 */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* アニメーションにease-in-outを適用 */
+}
+
+#about h2, #about p {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: left;
+  padding: 20px;
+  justify-content: flex-end; /* 右端に配置 */
+  text-align: right; /* テキストを右揃え */
+}
+
+#about ul li h3 {
+  font-size: 1.3rem;
+  margin-bottom: 100px;
+    text-align: center; /* テキストを中央揃え */
+  line-height: 1.0;
+  
+}
+
+
+#about ul li p:nth-of-type(1) {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 100px 0 150px 0;
+  color: #666;
+}
+
+/* 2つ目の<p>タグ */
+#about ul li p:nth-of-type(2) {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 290px 0 0 0; /* 上部に余白を追加して1つ目の<p>タグと分離 */
+  color: #666;
+}
+
+
+/* リストアイテムのホバーアクション */
+#about ul li:hover {
+  transform: translateY(-10px); /* リスト項目が浮き上がる */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* ホバー時の影 */
+}
+
+#about ul li img {
+  width: 200px;
+  text-align: center;
+  background-color: #f0f0f0; /* 背景色 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* アニメーションにease-in-outを適用 */
+  
+}
+#about ul li:hover {
+  transform: translateY(-10px); /* 上に10px浮き上がる */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* 影を強調して浮き上がる効果を増す */
+}
+
+
+
+
+#about ul li:last-child {
+  margin-right: 0; /* 最後のアイテムの余白をなくす */
+}
+
+
+
+/* Works Section */
+#works {
+  position: relative; /* 背景画像を相対的に配置 */
+  overflow: hidden; /* セクション内の要素がはみ出さないようにする */
+}
+/* 背景画像用のスタイル */
+#works::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50%; /* 初期位置を画面外に */
+  width: 50%; /* 右半分に表示 */
+  height: 100%;
+  background-image: url('your-image-path.jpg'); /* 背景画像を設定 */
+  background-size: cover; /* 背景画像を全体にカバー */
+  background-position: center;
+  transition: transform 0.5s ease-in-out; /* ふんわりスライドするアニメーション */
+  transform: translateX(100%); /* 初期状態では画面外に配置 */
+}
+/* ホバー時のアニメーション */
+.work-item:hover ~ #works::before {
+  transform: translateX(0); /* ホバー時に背景画像をスライドイン */
+  transition-delay: 0s; /* ホバー時にすぐアクション */
+}
+/* ホバーを終了した後のアニメーション */
+.work-item:hover ~ #works::before {
+  transition-delay: 0.3s; /* ホバー終了後に遅延させて次のアクションが始まるように設定 */
+  transform: translateX(100%); /* 元の位置に戻る */
+}
+
+#works h2{
+font-size: 2rem;
+}
+.work-gallery {
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-item {
+  width: 400px;
+  text-align: center;
+  background-color: #f0f0f0; /* ベタ塗りの色を指定 */
+  padding: 20px; /* コンテンツとの余白を追加 */
+  border-radius: 10px; /* 角を丸くしたい場合 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加して浮き上がるような効果 */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* アニメーションにease-in-outを適用 */
+}
+
+.work-item:hover {
+  transform: translateY(-10px); /* 上に10px浮き上がる */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* 影を強める */
+}
+
+.work-item img {
+ 
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+.profile-link {
+  text-decoration: none; /* リンクの下線を消す */
+  color: inherit; /* テキストの色を継承 */
+  display: block; /* リンク全体をブロック化してクリック可能に */
+}
+
+.profile-link:hover {
+  background-color: #f5f5f5; /* ホバー時に背景色を変更 */
+  transition: background-color 0.3s ease;
+}
